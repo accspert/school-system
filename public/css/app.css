@@ -1,0 +1,113 @@
+/* public/css/app.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding-top: 60px; /* Space for the fixed header */
+}
+
+/* --- Header/Navigation --- */
+.header {
+    background-color: #3f51b5; /* Indigo */
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.header a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.header a:hover {
+    text-decoration: underline;
+}
+
+/* --- Container and Cards --- */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* --- Tables --- */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.data-table th, .data-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+.data-table th {
+    background-color: #e8eaf6; /* Light Indigo */
+    color: #3f51b5;
+}
+
+/* --- Buttons --- */
+.btn {
+    padding: 8px 15px;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+}
+.btn-primary {
+    background-color: #4caf50; /* Green for success/create */
+    color: white;
+}
+.btn-info {
+    background-color: #2196f3; /* Blue for view/info */
+    color: white;
+}
+.btn-warning {
+    background-color: #ff9800; /* Orange for edit */
+    color: white;
+}
+.btn-danger {
+    background-color: #f44336; /* Red for delete */
+    color: white;
+}
+
+/* --- Form Styling --- */
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block; /* Makes the label take its own line */
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't widen the input */
+}
+textarea.form-control {
+    resize: vertical;
+}
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #3f51b5; /* Match header color */
+    text-decoration: underline;
+}
